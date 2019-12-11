@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DressListDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <LinearLayout
+            android:id="@+id/linear_detail_dress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_detail_dress"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:src="@drawable/longdress"
+            />
+
+            <TextView
+                android:id="@+id/tv1_detail_dress_icon"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Black Luxury Long Dress"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+    </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_detail_dress_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linear_detail_dress">
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_detail_dress_rincian"
+                android:text="Deskripsi Produk"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/tv_detail_dress_rincian_isi"
+                android:text="Dress dengan bahan yang nyaman, sangat cocok untuk dibawa ke pesta ataupun acara formal. Untuk pemesanan akan dikirim jika telah memesan sebelum jam 13.00 WITA, dan jika lebih dari itu akan dikirim hari selanjutnya"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_detail_dress_2"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cv_detail_dress_1">
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:id="@+id/linear_detail_dress_rincian_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Rincian Produk"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"/>
+            <LinearLayout
+                android:id="@+id/linear_detail_dress_size"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_detail_dress_panjang"
+                    android:text="Panjang: "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_detail_dress_rincian_panjang"
+                    android:text="80 cm"/>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/linear_detail_dress_lebar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_detail_dress_lebar"
+                        android:text="Lebar Pinggang: "/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_detail_dress_rincian_lebar"
+                        android:text="20 cm"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/linear_detail_dress_panjanglengan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_detail_dress_panjanglengan"
+                        android:text="Panjang Lengan : "/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_detail_dress_rincian_panjanglengan"
+                        android:text="10 cm"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/linear_detail_dress_merk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_detail_dress_merk"
+                        android:text="Merk : "/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_detail_dress_rincian_merk"
+                        android:text="Factory Branded"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/linear_detail_dress_stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_detail_dress_stock"
+                        android:text="Stock : "/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_detail_dress_rincian_stock"
+                        android:text="4 "/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_detail_book_dress"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cv_detail_dress_2"
+            android:background="@color/maroon"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Book"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            />
+
+
+    </RelativeLayout>
+
+</ScrollView>

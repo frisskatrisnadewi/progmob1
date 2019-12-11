@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@+id/title_booking"
+            android:id="@+id/cv_booking_dress_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_booking_alamat_judul"
+                    android:text="Alamat Penerima"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:id="@+id/tv_booking_alamat_lengkap"
+                    android:text="Jl.Kampus Udayana, fakultas Teknik, Universitas Udayana."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:id="@+id/tv_booking_alamat_kecamatan"
+                    android:text="Jimbaran"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:id="@+id/tv_booking_alamat_kabupaten"
+                    android:text="Badung"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:id="@+id/tv_booking_alamat_kodepos"
+                    android:text="82115"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+            android:id="@+id/cv_booking_dress_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cv_booking_dress_1">
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_booking_jumlah_item"
+                    android:text="Jumlah Pesanan"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"/>
+               <ImageView
+                   android:layout_gravity="center"
+                   android:layout_width="20dp"
+                   android:layout_height="30dp"
+                   android:id="@+id/btn_book_jumlah_min"
+                   android:background="@drawable/substract"/>
+
+                <TextView
+                    android:id="@+id/tv_book_jumlah"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="4"/>
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/btn_book_jumlah_plus"
+                    android:background="@drawable/add"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="5dp"
+            android:id="@+id/cv_booking_dress_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cv_booking_dress_2">
+
+            <LinearLayout
+                android:id="@+id/linear_book_tanggal"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:id="@+id/tv_booking_alamat_tanggal_awal"
+                    android:text="Tanggal Pinjam"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"/>
+
+                <Button
+                    android:id="@+id/btn_book_date_start"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:background="@color/white"
+                    android:text="choose "
+                    android:textAllCaps="false"
+                    android:textColor="@color/grey"
+                    android:textSize="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_booking_tanggal_awal_pick"
+                    android:layout_width="239dp"
+                    android:layout_height="match_parent"
+                    android:text="Dimulai pada " />
+
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/tv_booking_tanggal_awal_result"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="5dp"
+            android:id="@+id/cv_booking_dress_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cv_booking_dress_3">
+
+            <LinearLayout
+                android:id="@+id/linear_book_tanggal_2"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:id="@+id/tv_booking_alamat_tanggal_akhir"
+                    android:text="Tanggal Kembali"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/btn_book_date_end"
+                    android:background="@color/white"
+                    android:text="choose "
+                    android:textAllCaps="false"
+                    android:textColor="@color/grey"
+                    android:textSize="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_booking_tanggal_akhir_pick"
+                    android:layout_width="239dp"
+                    android:layout_height="match_parent"
+                    android:text="Berakhir pada " />
+
+                <TextView
+                    android:id="@+id/tv_booking_tanggal_akhir_result"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="5dp"
+            android:id="@+id/cv_booking_dress_5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cv_booking_dress_4">
+
+            <LinearLayout
+                android:id="@+id/linear_book_payment"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:id="@+id/tv_booking_total"
+                    android:text="Payment"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:id="@+id/linear_book_payment2"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_booking_total_2"
+                    android:layout_width="239dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="Total" />
+
+                <TextView
+                    android:gravity="left"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/tv_booking_total_3"
+                    android:text="Rp"/>
+                <TextView
+                    android:gravity="left"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/tv_booking_total_4"
+                    android:text="25000"/>
+            </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cv_booking_dress_5"
+            android:background="@color/maroon"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:text="CheckOut"
+            />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize= "9pt"
+            android:text="CHECKOUT"
+            android:textColor="@color/maroon"
+            android:id="@+id/title_booking"/>
+
+    </RelativeLayout>
+
+</ScrollView>
